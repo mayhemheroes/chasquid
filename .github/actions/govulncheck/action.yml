@@ -1,0 +1,15 @@
+name: govulncheck
+description: Run govulncheck against the repository.
+
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/setup-go@v3
+      with:
+        go-version: ">=1.19"
+    - name: install govulncheck
+      run: go install golang.org/x/vuln/cmd/govulncheck@latest
+      shell: bash
+    - name: run govulncheck
+      run: govulncheck ./...
+      shell: bash
