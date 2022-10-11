@@ -5,7 +5,7 @@ project: chasquid
 target: chasquid-normalize-fuzz
 
 # Base image to run the binary in.
-image: ghcr.io/lotdeef/aws-sdk-go:latest
+# image: ghcr.io/lotdeef/chasquid:latest
 
 # List of commands used to test the target
 cmds:
