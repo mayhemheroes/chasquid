@@ -1,12 +1,4 @@
-# Namespaced project name that the target belongs to
 project: chasquid
-
-# Target name (should be unique within the project)
 target: chasquid-normalize-fuzz
-
-# Base image to run the binary in.
-# image: ghcr.io/lotdeef/chasquid:latest
-
-# List of commands used to test the target
 cmds:
-  - cmd: ./fuzz.libfuzzer
+  - cmd: ./normalize-fuzz.libfuzzer
