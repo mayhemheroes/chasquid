@@ -1,0 +1,4 @@
+project: chasquid
+target: chasquid-normalize-fuzz
+cmds:
+  - cmd: ./normalize-fuzz.libfuzzer
