@@ -1,4 +1,4 @@
-FROM fuzzers/go-fuzz:1.2.0 as builder
+FROM fuzzers/go-fuzz:1.2.0 AS builder
 
 ARG project='chasquid'
 ARG fuzzTargetPath='internal/normalize'
